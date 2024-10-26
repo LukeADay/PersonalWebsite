@@ -1,0 +1,26 @@
+.experience {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    border-radius: 8px;
+  }
+  
+  .experience .job {
+    margin-bottom: 20px;
+  }
+  
+  .experience h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #4CAF50;
+  }
+  
+  .experience h4 {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .experience p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
