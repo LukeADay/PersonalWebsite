@@ -12,7 +12,7 @@ function Projects() {
         </li>
         <li>
           <h3>Kaggle Competitions</h3>
-          <p>Participated in Kaggle competitions focused on predicting outcomes and optimizing complex metrics.</p>
+          <p>Participated in Kaggle competitions focused on predicting outcomes and optimizing complex metrics. More to come on this...</p>
         </li>
       </ul>
     </section>
