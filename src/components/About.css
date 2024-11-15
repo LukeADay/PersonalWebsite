@@ -1,13 +1,17 @@
+/* About.css */
 .about {
-    background-color: #fff;
-    color: #333;
-    padding: 50px 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about p {
-    line-height: 1.6;
-    font-size: 16px;
-  }
-  
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 40px; /* Add spacing below the section */
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
