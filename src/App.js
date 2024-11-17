@@ -9,7 +9,6 @@ import Projects from './components/Projects';
 import Articles from './components/Articles';
 import Contact from './components/Contact';
 import SentimentAnalysis from './components/SentimentAnalysis';
-import SkillBar from 'react-skillbars';
 import Skills from './components/Skills';
 
 function App() {
