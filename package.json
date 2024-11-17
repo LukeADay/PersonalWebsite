@@ -1,5 +1,6 @@
 {
   "name": "professional-website",
+  "homepage": "https://lukeaday.github.io/PersonalWebsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
