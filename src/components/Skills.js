@@ -13,6 +13,7 @@ const SKILLS = [
     {type: "Redshift", level: 80},
     {type: "Airflow", level: 70},
     {type: "Glue", level: 65},
+    {type: "Linux", level: 65},
     {type: "Docker", level: 60},
     {type: "Kubernetes", level: 50},
     {type: "JavaScript", level: 50},
@@ -23,10 +24,10 @@ const SKILLS = [
 ];
 
 const colors = {
-    bar: "#3498db",
+    bar: "#2c3e50", // Darker background for the skill bar
     title: {
-      text: "#fff",
-      background: "#2980b9"
+      text: "#fff", // White text for visibility
+      background: "#34495e" // Darker title background
     }
   };
   
@@ -34,15 +35,21 @@ const colors = {
 
   function Skills() {
     return (
-      <div className="skills-container">
-        <h2>Skills</h2>
-        <SkillBar skills={SKILLS.map(skill => ({
-          ...skill,
-          title: `${skill.type} (${skill.years})`
-        }))} colors={colors} height={25} animationDuration={2000} />
-      </div>
+        <div className="skills-container">
+            <h2>Skills</h2>
+            <p className="skills-intro">
+                If I were to rate my skills based on my expertise and experience, here’s how they would look. 
+                These ratings reflect my proficiency across different tools, languages, and platforms that I use regularly.
+            </p>
+            <SkillBar
+                skills={SKILLS}
+                colors={colors}
+                height={25}
+                animationDuration={2000}
+            />
+        </div>
     );
-  }
-  
+}
+
 
 export default Skills;

@@ -2,9 +2,13 @@
     max-width: 960px;
     margin: auto;
     padding: 20px;
-    padding-left: 30px;  
+    padding-left: 30px;
+    background-color: #1a1a1a; /* Dark background behind the skill bars */
+    border-radius: 10px; /* Smooth rounded edges for the container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
   }
   
+  /* Skill bar hover and transition effects */
   .skill-bar {
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -14,9 +18,30 @@
     transform: scale(1.05);
   }
   
+  /* Center-align heading for consistency */
   h2 {
-    color: #333;
+    color: #fff; /* Change to white for better visibility on the dark background */
     text-align: center;
     margin-bottom: 20px;
+  }
+  
+  /* Ensuring the numbers and text are visible */
+  .react-skillbar-title {
+    color: #fff; /* Title text is white for visibility */
+  }
+  
+  .react-skillbar-percent {
+    color: #fff; /* Percentages are now white for better visibility */
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Skill bar background */
+  .react-skillbar-bar {
+    background: linear-gradient(to right, #3498db, #2980b9); /* Gradient for the bars */
+    border-radius: 5px; /* Smooth edges for the bars */
   }
   
