@@ -6,9 +6,7 @@ import CodingAnimations from './components/CodingAnimations';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Articles from './components/Articles';
 import Contact from './components/Contact';
-import SentimentAnalysis from './components/SentimentAnalysis';
 import Skills from './components/Skills';
 
 function App() {
@@ -21,8 +19,6 @@ function App() {
       <Experience />
       <Skills />
       <Projects />
-      <Articles />
-      <SentimentAnalysis /> {/* New Sentiment Analysis Section */}
       <Contact />
     </div>
   );
