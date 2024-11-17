@@ -7,11 +7,11 @@ function CodingAnimations() {
 
   const codeSnippet = `{
   "name": "Luke Day",
-  "skills": ["Python", "R", "SQL", "Machine Learning"],
+  "Top skills": ["Python", "R", "SQL", "Machine Learning"],
   "experience": "ETL"
 }`;
 
-  const terminalMessage = "I'm a Data Scientist specializing in predictive analytics, machine learning, and AI.";
+  const terminalMessage = " I'm a Data Scientist specialising in predictive analytics, machine learning, and AI.";
 
   useEffect(() => {
     let codeIndex = 0;
