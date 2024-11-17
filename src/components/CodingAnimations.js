@@ -41,7 +41,7 @@ function CodingAnimations() {
       clearInterval(codeInterval);
       clearInterval(terminalInterval);
     };
-  }, []);
+  }, [codeSnippet]);
 
   return (
     <section id="coding-animations" className="coding-animations">

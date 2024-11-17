@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaCoffee } from 'react-icons/fa';
 import './Hero.css'; // Assuming you have a separate CSS for styling
 import profilepic from '../assets/profilepic.jpeg';
-import bannerpicture from '../assets/bannerpicture.jpeg';
+
 
 function Hero() {
   return (
