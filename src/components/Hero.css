@@ -9,9 +9,8 @@
   align-items: center;
   background: linear-gradient(45deg, #00aaff, #0052cc, #6a11cb, #2575fc); /* Default gradient colors */
   background-size: 400% 400%; /* Makes the gradient larger for animation */
-  animation: gradientAnimation 15s ease infinite; /* Animation duration and effect */
+  animation: gradientAnimation 10s ease infinite; /* Animation duration and effect */
 }
-
 
 .hero-banner {
   position: absolute;
@@ -20,7 +19,7 @@
   right: 0;
   width: 100%;
   height: 20%; /* Banner height */
-  background-image: url('../assets/bannerpicture.jpeg');
+  background-image: url('../assets/bannerpicture.jpeg'); /* Ensure this matches your image path */
   background-size: cover;
   background-position: center;
 }
@@ -33,16 +32,40 @@
   background: linear-gradient(-45deg, #1a73e8, #673ab7, #f44336, #00bcd4); /* Gradient background */
   background-size: 400% 400%; /* Ensures smooth animation */
   animation: gradientAnimation 8s ease infinite; /* Animates the gradient */
-  padding: 205px 200px; /* Adjust padding */
+  padding: 205px 200px; /* Keeps your original desktop padding */
   border-radius: 15px; /* Rounded corners */
-  width: 100%; /* Adjust width */
+  width: 100%; /* Full width on desktop */
   text-align: center;
   color: white; /* Text color for readability */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 }
 
 
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid white; /* Optional: Add a border for contrast */
+}
 
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+}
 
 @keyframes gradientAnimation {
   0% {
@@ -56,30 +79,24 @@
   }
 }
 
-.hero-content h2 {
-  font-size: 2.5rem;  /* Adjust size of name */
-  margin-bottom: 10px;  /* Space between name and description */
+/* Media Query for Mobile Adjustments */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 50px 15px; /* Reduced padding for mobile */
+    border-radius: 10px; /* Slightly smaller rounded corners */
+    width: 90%; /* Adjusts width for smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* Scales down title font size */
+  }
+
+  .hero-content p {
+    font-size: 1.2rem; /* Adjusts description font size */
+  }
+
+  .profile-image {
+    width: 120px; /* Scales down the profile image */
+    height: 120px;
+  }
 }
-
-.hero-content p {
-  font-size: 1.5rem;  /* Adjust the font size of the description */
-  margin-top: 0;
-  color: white;
-  margin-bottom: 20px;  /* Space between description and social icons */
-}
-
-.profile-image {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  color: white;
-  font-size: 30px;
-}
-
-

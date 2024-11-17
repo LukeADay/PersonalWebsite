@@ -1,14 +1,12 @@
 .navbar {
   width: 100%;
-  height: 60px; /* Adjust the height as needed */
-  background-color: rgba(126, 89, 171, 0.322);
+  height: 60px;
+  background-color: rgba(126, 89, 171, 0.322); /* Original purple shade */
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-in-out;
 }
-
 
 .navbar-container {
   display: flex;
@@ -26,10 +24,19 @@
   text-decoration: none;
 }
 
-/* Menu Icon for Mobile */
+/* Menu Icon */
 .menu-icon {
   display: none;
   cursor: pointer;
+}
+
+.menu-icon .bar1,
+.menu-icon .bar2,
+.menu-icon .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
 }
 
 .menu-icon.open .bar1 {
@@ -42,16 +49,6 @@
 
 .menu-icon.open .bar3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.menu-icon .bar1,
-.menu-icon .bar2,
-.menu-icon .bar3 {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px 0;
-  transition: 0.4s;
 }
 
 /* Navigation Menu */
@@ -68,42 +65,35 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
 .nav-links:hover {
   color: #0300cc;
 }
 
-.nav-links.active {
-  border-bottom: 2px solid #0044cc;
-}
-
-/* Responsive Styles */
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
   }
 
   .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: height 0.3s ease-in-out;
+    display: none;
   }
 
   .nav-menu.active {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background for mobile */
+    width: 100%;
+    padding: 1rem 0;
   }
 
   .nav-item {
-    text-align: center;
     margin: 20px 0;
+    text-align: center;
   }
 }
