@@ -25,13 +25,13 @@ function Navbar() {
             <a href="#about" className="nav-links" onClick={toggleMenu}>About</a>
           </li>
           <li className="nav-item">
+            <a href="#phd-thesis" className="nav-links" onClick={toggleMenu}>PhD Thesis</a>
+          </li>
+          <li className="nav-item">
             <a href="#experience" className="nav-links" onClick={toggleMenu}>Experience</a>
           </li>
           <li className="nav-item">
             <a href="#projects" className="nav-links" onClick={toggleMenu}>Projects</a>
-          </li>
-          <li className="nav-item">
-            <a href="#articles" className="nav-links" onClick={toggleMenu}>Articles</a>
           </li>
           <li className="nav-item">
             <a href="#contact" className="nav-links" onClick={toggleMenu}>Contact</a>

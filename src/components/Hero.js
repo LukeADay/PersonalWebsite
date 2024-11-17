@@ -5,7 +5,7 @@ import profilepic from '../assets/profilepic.jpeg';
 
 function Hero() {
   return (
-    <section className="hero">
+  <section id="hero" className="hero">
       <div className="hero-banner"></div>
       <div className="hero-content">
         <img

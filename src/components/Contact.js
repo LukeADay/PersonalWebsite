@@ -1,6 +1,6 @@
-// src/components/Contact.js
 import React from 'react';
 import './Contact.css';
+import { FaCoffee } from 'react-icons/fa'; // For the coffee icon
 
 function Contact() {
   return (
@@ -21,6 +21,18 @@ function Contact() {
         </div>
         <button type="submit" className="submit-button">Send Message</button>
       </form>
+      <div className="buy-me-coffee">
+        <p>If you like my work and want to support me, consider buying me a coffee!</p>
+        <a
+          href="https://www.buymeacoffee.com/LukeADay"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="coffee-button"
+        >
+          <FaCoffee size={20} style={{ marginRight: '8px' }} />
+          Buy Me a Coffee
+        </a>
+      </div>
     </section>
   );
 }

@@ -1,0 +1,92 @@
+/* Publications Section */
+.publications {
+  padding: 50px 20px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgb(252, 252, 252);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publications:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.publications h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.publications p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.thesis-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thesis-table th,
+.thesis-table td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.thesis-table th {
+  background-color: #4c6baf;
+  color: white;
+  font-weight: bold;
+}
+
+.thesis-table td {
+  color: #333;
+}
+
+.thesis-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.thesis-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Button Styling */
+.thesis-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4c6baf;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.thesis-button:hover {
+  background-color: #388e3c;
+  transform: translateY(-3px);
+}
+
+.publications h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
