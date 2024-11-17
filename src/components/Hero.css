@@ -1,61 +1,85 @@
-.hero-content {
+.hero {
   position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.terminal {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #00ff00;
-  font-family: monospace;
-  padding: 15px 20px;
-  border-radius: 8px;
-  margin-top: 20px;
-  display: inline-block;
-  text-align: left;
-  max-width: 90%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.terminal-content {
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
   display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures content starts at the top */
   align-items: center;
+  background: linear-gradient(45deg, #00aaff, #0052cc, #6a11cb, #2575fc); /* Default gradient colors */
+  background-size: 400% 400%; /* Makes the gradient larger for animation */
+  animation: gradientAnimation 15s ease infinite; /* Animation duration and effect */
 }
 
-.terminal-line {
-  white-space: pre;
+
+.hero-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20%; /* Banner height */
+  background-image: url('../assets/bannerpicture.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
-.blinking-cursor {
-  display: inline-block;
-  margin-left: 2px;
-  width: 10px;
-  background-color: #00ff00;
-  animation: blink 0.8s steps(2) infinite;
+.hero-content {
+  position: absolute;
+  bottom: 0; /* Positions the profile image at the bottom of the banner */
+  left: 50%;
+  transform: translateX(-50%); /* Center the content horizontally */
+  background: linear-gradient(-45deg, #1a73e8, #673ab7, #f44336, #00bcd4); /* Gradient background */
+  background-size: 400% 400%; /* Ensures smooth animation */
+  animation: gradientAnimation 8s ease infinite; /* Animates the gradient */
+  padding: 205px 200px; /* Adjust padding */
+  border-radius: 15px; /* Rounded corners */
+  width: 100%; /* Adjust width */
+  text-align: center;
+  color: white; /* Text color for readability */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
 
-/* Optional background flicker effect */
-@keyframes backgroundFlicker {
-  0%, 100% {
-    background-color: rgba(0, 0, 0, 0.85);
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
   50% {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-.terminal {
-  animation: backgroundFlicker 3s ease-in-out infinite;
+.hero-content h2 {
+  font-size: 2.5rem;  /* Adjust size of name */
+  margin-bottom: 10px;  /* Space between name and description */
 }
 
-.profile-pic {
-  width: 150px; /* Adjust to your preferred size */
-  height: 150px;
+.hero-content p {
+  font-size: 1.5rem;  /* Adjust the font size of the description */
+  margin-top: 0;
+  color: white;
+  margin-bottom: 20px;  /* Space between description and social icons */
+}
+
+.profile-image {
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
   margin-bottom: 20px;
 }
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 30px;
+}
+
+

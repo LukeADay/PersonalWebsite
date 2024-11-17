@@ -1,21 +1,43 @@
-// src/components/Navbar.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#articles">Articles</a>
-      <a href="https://github.com/LukeADay" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/luke-day-14780585/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="#contact">Contact</a>
-      <a href="https://www.buymeacoffee.com/LukeADay" target="_blank" rel="noopener noreferrer" className="buy-me-a-coffee">
-        Buy Me a Coffee
-      </a>
+      <div className="navbar-container">
+        <a href="#hero" className="navbar-logo">MyPortfolio</a>
+        <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
+        <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
+          <li className="nav-item">
+            <a href="#hero" className="nav-links" onClick={toggleMenu}>Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="#about" className="nav-links" onClick={toggleMenu}>About</a>
+          </li>
+          <li className="nav-item">
+            <a href="#experience" className="nav-links" onClick={toggleMenu}>Experience</a>
+          </li>
+          <li className="nav-item">
+            <a href="#projects" className="nav-links" onClick={toggleMenu}>Projects</a>
+          </li>
+          <li className="nav-item">
+            <a href="#articles" className="nav-links" onClick={toggleMenu}>Articles</a>
+          </li>
+          <li className="nav-item">
+            <a href="#contact" className="nav-links" onClick={toggleMenu}>Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
