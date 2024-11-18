@@ -36,9 +36,9 @@ const colors = {
   function Skills() {
     return (
         <div className="skills-container">
-            <h2>Skills</h2>
+            <h2>Programming Languages</h2>
             <p className="skills-intro">
-                If I were to rate my skills based on my expertise and experience, here’s how they would look. 
+                If I were to rate my skill level across programming languages based on my expertise and experience, here’s how they would look. 
                 These ratings reflect my proficiency across different tools, languages, and platforms that I use regularly.
             </p>
             <SkillBar
