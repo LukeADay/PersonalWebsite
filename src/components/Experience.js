@@ -17,7 +17,7 @@ function Experience() {
           <li>
             Designed and deployed an end-to-end ETL and ML pipeline using Python, AWS (SageMaker), and Redshift, 
             enabling accurate insights for major business tenders. This system improved operational efficiency 
-            and supported critical decision-making across underwriting and pricing teams.
+            and supported critical decision-making across various internal and external teams.
           </li>
           <li>
             Led the creation of Tableau dashboards to visualize complex data insights, ensuring key metrics 
