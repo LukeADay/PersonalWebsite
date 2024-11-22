@@ -9,8 +9,8 @@ function About() {
         <p>
           As a data scientist with a PhD in applied statistics and over five years of experience, 
           I specialise in developing machine learning and statistical models to address complex business challenges. 
-          My daily toolkit includes Python, R, SQL, and AWS services, complemented by a passion for self-learning in languages such as JavaScript, React, and C++. 
-          I developed this website from scratch with React, JavaScript, CSS, and HTML.
+          My daily toolkit includes <code>Python, R, SQL</code>, and <code>AWS</code> services, complemented by a passion for self-learning in languages such as <code>JavaScript, React,</code> and <code>C++</code>. 
+          I developed this website from scratch with <code>React, JavaScript, CSS,</code> and <code>HTML</code>.
         </p>
 
         <p>
