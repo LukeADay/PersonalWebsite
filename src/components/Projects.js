@@ -23,8 +23,8 @@ function Projects() {
     },
     {
       title: 'Kaggle Child Mind Institute — Problematic Internet Use',
-      description: 'A Kaggle competition to predict children\'s problematic internet usage. More to come soon...',
-      link: 'https://www.kaggle.com/competitions/problematic-internet-use',
+      description: 'A Kaggle competition to predict children\'s problematic internet usage.',
+      link: 'https://github.com/LukeADay/CMI-Kaggle-Competition',
       image: computer,
     },
     {
