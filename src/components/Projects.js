@@ -4,6 +4,7 @@ import decisiontree from '../assets/decisiontree.jpg';
 import tech from '../assets/tech.jpg';
 import payments from '../assets/payments.jpg';
 import computer from '../assets/computer.jpg';
+import thunder from '../assets/thunder.jpg';
 
 function Projects() {
   const projectData = [
@@ -26,6 +27,12 @@ function Projects() {
       description: 'A Kaggle competition to predict children\'s problematic internet usage.',
       link: 'https://github.com/LukeADay/CMI-Kaggle-Competition',
       image: computer,
+    },
+    {
+      title: 'emotion-detection-transformers-api',
+      description: 'Fine tuning an LLM to predict emotion, deploying the pipeline with Github Actions, AWS Lambda, Codebuild, S3 and Amazon Gateway API.',
+      link: 'https://github.com/LukeADay/emotion-detector-transformers-api',
+      image: thunder,
     },
     {
       title: 'Payments',
