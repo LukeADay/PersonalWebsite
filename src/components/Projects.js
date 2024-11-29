@@ -36,7 +36,7 @@ function Projects() {
     },
     {
       title: 'Payments',
-      description: 'Predicting successful payments.',
+      description: 'Predicting where payments will execute. Employing a h2o Gradient Boosting Machine and using explainable machine learning techniques',
       link: 'https://github.com/LukeADay/Payments',
       image: payments,
     },

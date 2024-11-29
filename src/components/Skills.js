@@ -13,6 +13,7 @@ const SKILLS = [
     {type: "Redshift", level: 80},
     {type: "Airflow", level: 70},
     {type: "Glue", level: 65},
+    {type: "Codebuild", level: 65},
     {type: "Linux", level: 65},
     {type: "Docker", level: 60},
     {type: "Kubernetes", level: 50},
@@ -36,9 +37,9 @@ const colors = {
   function Skills() {
     return (
         <div className="skills-container">
-            <h2>Programming Languages</h2>
+            <h2>Personal Tech Stack </h2>
             <p className="skills-intro">
-                If I were to rate my skill level across programming languages based on my expertise and experience, here’s how they would look. 
+                If I were to rate my skill level across technologies based on my expertise and experience, here’s how they would look. 
                 These ratings reflect my proficiency across different tools, languages, and platforms that I use regularly.
             </p>
             <SkillBar
